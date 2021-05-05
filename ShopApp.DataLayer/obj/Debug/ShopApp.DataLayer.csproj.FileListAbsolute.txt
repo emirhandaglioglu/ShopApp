@@ -1,0 +1,15 @@
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\ShopApp.DataLayer.dll
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\ShopApp.DataLayer.pdb
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.csprojAssemblyReference.cache
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.dll
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.pdb
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\ShopApp.DataLayer.dll.config
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.csproj.CopyComplete
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\ShopApp.Entity.dll
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\ShopApp.Entity.pdb
+C:\Users\Emirhan\source\repos\ShopApp\ShopApp.DataLayer\bin\Debug\ShopApp.Entity.dll.config
