@@ -1,5 +1,6 @@
 ﻿using ShopApp.BusinessLayer.Abstract;
 using ShopApp.DataLayer.Abstract;
+using ShopApp.DataLayer.Concrate.Repositories;
 using ShopApp.Entity.Concrete;
 using System;
 using System.Collections.Generic;
@@ -11,16 +12,36 @@ namespace ShopApp.BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        ICategory _category;
-
-        public CategoryManager(ICategory category)
+        ICategoryDAL _category;
+        public CategoryManager(ICategoryDAL category)
         {
             _category = category;
         }
 
+        public void CategoryAdd(Category category)
+
+        {
+            _category.Insert(category);
+        }
+
+        public void CategoryDel(Category category)
+        {
+            _category.Delete(category);
+        }
+
+        public void CategoryUpdate(Category category)
+        {
+            _category.Update(category);
+        }
+
+        public Category GetById(int id)
+        {
+            return _category.Get(x => x.Id == id);
+        }
+
         public List<Category> GetList()
         {
-            throw new NotImplementedException();
-        }  
+            return _category.List();
+        }
     }
 }

@@ -30,17 +30,25 @@ namespace ShopApp.DataLayer.Concrate.Repositories
 
         public void Insert(T p)
         {
+            
             _object.Add(p);
+            context.SaveChanges();
+        }
+
+        
+        public void Update(T p)
+        {
+            context.SaveChanges();
         }
 
         public List<T> List(Expression<Func<T, bool>> filter)
         {
-            return _object.Where(filter).ToList();
+            throw new NotImplementedException();
         }
 
-        public void Update(T p)
+        public T Get(Expression<Func<T, bool>> filter)
         {
-            context.SaveChanges();
+            return _object.SingleOrDefault(filter);
         }
     }
 }

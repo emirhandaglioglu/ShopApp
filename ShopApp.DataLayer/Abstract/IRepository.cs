@@ -15,5 +15,6 @@ namespace ShopApp.DataLayer.Abstract
         void Update(T p);
         void Delete(T p);
         List<T> List(Expression<Func<T, bool>> filter);//şartlı listeleme
+        T Get(Expression<Func<T, bool>> filter);
     }
 }

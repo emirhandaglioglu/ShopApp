@@ -1,0 +1,12 @@
+﻿@using ShopApp.Entity.Concrete
+@model Category
+@{
+    ViewBag.Title = "DeleteCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>DeleteCategory</h2>
+<p>
+    @Model.CategoryName kategorisi silinmiştir.
+</p>
+<a href="~/Category/Index"> Kategori Listesine Dön</a>

@@ -10,3 +10,15 @@ C:\Users\Emirhan\source\repos\ShopApp\ShopApp.Entity\bin\Debug\EntityFramework.S
 C:\Users\Emirhan\source\repos\ShopApp\ShopApp.Entity\bin\Debug\EntityFramework.xml
 C:\Users\Emirhan\source\repos\ShopApp\ShopApp.Entity\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Emirhan\source\repos\ShopApp\ShopApp.Entity\obj\Debug\ShopApp.EntityLayer.csproj.CopyComplete
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\bin\Debug\ShopApp.Entity.dll.config
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\bin\Debug\ShopApp.Entity.dll
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\bin\Debug\ShopApp.Entity.pdb
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\bin\Debug\EntityFramework.dll
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\bin\Debug\EntityFramework.xml
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\obj\Debug\ShopApp.EntityLayer.csprojAssemblyReference.cache
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\obj\Debug\ShopApp.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\obj\Debug\ShopApp.EntityLayer.csproj.CopyComplete
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\obj\Debug\ShopApp.Entity.dll
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.Entity\obj\Debug\ShopApp.Entity.pdb
