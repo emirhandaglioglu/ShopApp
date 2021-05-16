@@ -43,5 +43,7 @@ namespace ShopApp.BusinessLayer.Concrete
         {
             return _category.List();
         }
+
+        
     }
 }

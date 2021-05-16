@@ -1,5 +1,5 @@
 ﻿@using ShopApp.Entity.Concrete
-@model List<Category>
+@model List<Product>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -9,17 +9,16 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Kategoriler</h3>
+                <h3 class="card-title">Ürünler</h3>
 
                 <div class="card-tools">
                     <div class="input-group input-group-sm" style="width:150px;">
                         <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                         <div class="input-group-append">
-                            <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>                           
+                            <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <!-- /.card-header -->
@@ -28,9 +27,11 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Kategori Adı</th>
-                            <th>Kategori Açıklaması</th>
-                            <th>Durum</th>
+                            <th>Ürün Adı</th>
+                            <th>Ürün Açıklaması</th>
+                            <th>Fiyat</th>
+                            <th>Stok Miktarı</th>
+                            <th>Kategori</th>
                             <th>İşlemler</th>
                         </tr>
                     </thead>
@@ -39,12 +40,14 @@
                         {
                             <tr>
                                 <td style="width: 10px">@item.Id</td>
-                                <td style="width: %40">@item.CategoryName</td>
+                                <td style="width: %40">@item.ProductName</td>
                                 <td>@item.Description</td>
-                                <td><span class="tag tag-success">@item.IsActive</span></td>
+                                <td><span class="tag tag-success">@item.Price</span></td>
+                                <td><span class="tag tag-success">@item.StockAmount</span></td>
+                                <td><span class="tag tag-success">@item.Category.CategoryName</span></td>
                                 <td style="width: 40px">
-                                    <a href="/Category/UpdateCategory/@item.Id" class="btn btn-success"> Düzenle</a>
-                                    <a href="/Category/DeleteCategory/@item.Id" class="btn btn-danger"> Sil</a>
+                                    <a href="/Product/UpdateProduct/@item.Id" class="btn btn-success"> Düzenle</a>
+                                    <a href="/Product/DeleteProduct/@item.Id" class="btn btn-danger"> Sil</a>
                                 </td>
                             </tr>
                         }
@@ -52,7 +55,7 @@
                 </table>
             </div>
             <div class="card-footer clearfix">
-                <a href="~/Category/AddCategory" class="btn btn-info float-right"><i class="fas fa-plus"></i> Kategori Ekle</a>
+                <a href="~/Product/AddProduct" class="btn btn-info float-right"><i class="fas fa-plus"></i> Ürün Ekle</a>
             </div>
             <!-- /.card-body -->
         </div>

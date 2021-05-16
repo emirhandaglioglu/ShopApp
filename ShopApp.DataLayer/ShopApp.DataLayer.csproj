@@ -55,12 +55,13 @@
     <Compile Include="Abstract\IOrder.cs" />
     <Compile Include="Abstract\IOrderDetail.cs" />
     <Compile Include="Abstract\IPayment.cs" />
-    <Compile Include="Abstract\IProduct.cs" />
+    <Compile Include="Abstract\IProductDAL.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IUser.cs" />
     <Compile Include="Abstract\IUserRol.cs" />
     <Compile Include="Concrate\Repositories\CategoryRepository.cs" />
     <Compile Include="Concrate\Repositories\GenericRepository.cs" />
+    <Compile Include="Concrate\Repositories\ProductRepository.cs" />
     <Compile Include="Concrate\ShopAppContext.cs" />
     <Compile Include="EntityFramework\EFCategoryDAL.cs" />
     <Compile Include="EntityFramework\EFOrderDAL.cs" />

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopApp.BusinessLayer.Abstract
 {
-    public interface ICategoryService 
+    public interface ICategoryService
     {
         List<Category> GetList();
         void CategoryAdd(Category category);

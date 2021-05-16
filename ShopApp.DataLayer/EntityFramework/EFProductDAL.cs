@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ShopApp.DataLayer.EntityFramework
 {
-    public class EFProductDAL : GenericRepository<Product>, IProduct 
+    public class EFProductDAL : GenericRepository<Product>, IProductDAL 
     {
     }
 }

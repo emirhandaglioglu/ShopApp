@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopApp.DataLayer.Abstract
+namespace ShopApp.DataLayer.Concrate.Repositories
 {
-    public interface IProduct:IRepository<Product>
+    public class ProductRepository : GenericRepository<Product>
     {
     }
 }
