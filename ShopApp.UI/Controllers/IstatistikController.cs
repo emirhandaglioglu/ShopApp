@@ -14,28 +14,24 @@ namespace ShopApp.UI.Controllers
         ProductManager pm = new ProductManager(new EFProductDAL());
         public ActionResult Index()
         {
+            //Toplam kategori sayısı
             var catList = cm.GetList();
             ViewBag.CategoryListCount = catList.Count();
 
+            //Ürümler tablosunda "Bilgisayar" kategorisine ait bilgisayar sayısı
             var productList = pm.GetList();
             ViewBag.productListCount = productList.Where(x => x.CategoryId == 2).Count();
 
-
+            //Yazar adında 'a' harfi geçen yazar sayısı
             var containA = pm.getContainsProduct("a");
             ViewBag.containA = containA;
-            
-            var query = productList.Join(catList,
-                        urun => urun.CategoryId,
-                        kategori => kategori.Id,
-                        (product, category) => new { product, category })
-                        .Select(result => new { ProductName = result.product, CategoryName = result.category.CategoryName })
-                        .GroupBy(grup => grup.ProductName).FirstOrDefault();
 
-            foreach (var item in query)
-            {
-                ViewBag.maxProductofCategory = item.CategoryName.ToString();
-            }
+            //En fazla ürüne sahip kategori adı
 
+            var maxProductofCategory = productList.GroupBy(x=>x.Category.CategoryName).FirstOrDefault();
+            ViewBag.maxProductofCategory = maxProductofCategory.Key;
+
+            //Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark
             var IsActiveTrue = catList.Where(x => x.IsActive == true).Count();
             var IsActiveFalse = catList.Where(x => x.IsActive == false).Count();
             ViewBag.IsActive = IsActiveTrue - IsActiveFalse;

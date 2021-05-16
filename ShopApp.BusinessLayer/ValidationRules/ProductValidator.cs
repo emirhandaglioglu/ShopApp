@@ -16,7 +16,7 @@ namespace ShopApp.BusinessLayer.ValidationRules
             RuleFor(x => x.Description).NotEmpty().WithMessage("Boş bırakılamaz");
             RuleFor(x => x.StockAmount).NotEmpty().WithMessage("Boş bırakılamaz");
             RuleFor(x => x.Price).NotEmpty().WithMessage("Boş bırakılamaz");
-            RuleFor(x => x.Category).NotEmpty().WithMessage("Boş bırakılamaz");
+            //RuleFor(x => x.Category).NotEmpty().WithMessage("Boş bırakılamaz");
 
         }
     }
