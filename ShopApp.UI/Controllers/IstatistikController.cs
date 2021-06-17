@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace ShopApp.UI.Controllers
 {
-    public class IstatistikController : Controller
+    public class IstatistikController : BaseController
     {
         CategoryManager cm = new CategoryManager(new EFCategoryDAL());
         ProductManager pm = new ProductManager(new EFProductDAL());

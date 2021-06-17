@@ -15,8 +15,7 @@ namespace ShopApp.Entity.Concrete
         public int Quantity { get; set; }
         public double Total { get; set; }
         public DateTime Date { get; set; }
-        public int MyProperty { get; set; }
-
+   
         
         public int OrderId { get; set; }
         public virtual Order Order { get; set; }

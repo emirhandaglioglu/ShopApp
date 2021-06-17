@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ShopApp.Entity.Concrete.Category>
+
+<div class="navi">
+    <div class="container">
+        <div class="navy">
+            <ul>
+                <!-- Main menu -->
+                <li>
+                    <a href="~/Home/Index">Home</a>
+                </li>
+
+                <li>
+                    <a href="~/Category/Index">Kategoriler</a>
+                    <ul>
+                        @foreach (var item in Model)
+                        {
+                            <li>
+                                <a href="~/Category/GetCategory/@item.Id">@item.CategoryName</a>
+                            </li>
+                        }
+                    </ul>
+                </li>
+
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

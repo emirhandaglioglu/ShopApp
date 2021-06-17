@@ -9,10 +9,15 @@ namespace ShopApp.Entity.Concrete
 {
     public class UserRole
     {
+        public UserRole()
+        {
+            UserInfos = new HashSet<UserInfo>();
+        }
         [Key]
         public int Id { get; set; }
-        public string UserRoleName { get; set; }
+        public string RoleName { get; set; }
 
-        public ICollection<User> Users { get; set; }
+
+        public virtual IEnumerable<UserInfo> UserInfos { get; set; }
     }
 }

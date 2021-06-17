@@ -52,11 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Concrete\Category.cs" />
-    <Compile Include="Concrete\User.cs" />
     <Compile Include="Concrete\Order.cs" />
     <Compile Include="Concrete\OrderDetail.cs" />
     <Compile Include="Concrete\Payment.cs" />
     <Compile Include="Concrete\Product.cs" />
+    <Compile Include="Concrete\UserInfo.cs" />
     <Compile Include="Concrete\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

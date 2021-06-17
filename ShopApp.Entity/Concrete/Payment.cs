@@ -14,6 +14,9 @@ namespace ShopApp.Entity.Concrete
         public double Price { get; set; }
         public DateTime Date { get; set; }
         public EnumPaymentType PaymentType { get; set; }
+
+        public int OrderId { get; set; }
+        public virtual Order Order { get; set; }
     }
 }
 public enum EnumPaymentType

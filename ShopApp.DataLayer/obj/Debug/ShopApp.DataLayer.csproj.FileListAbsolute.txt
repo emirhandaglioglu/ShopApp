@@ -28,3 +28,6 @@ C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.Da
 C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.csproj.CopyComplete
 C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.dll
 C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.pdb
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.Migrations.chg.resources
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.csproj.GenerateResource.cache
+C:\Users\Emirhan\Documents\GitHub\ShopApp\ShopApp.DataLayer\obj\Debug\ShopApp.DataLayer.Migrations.changes.resources

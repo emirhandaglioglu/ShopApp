@@ -15,60 +15,11 @@ namespace ShopApp.UI.Controllers
     public class CategoryController : Controller
     {
         CategoryManager categoryManager = new CategoryManager(new EFCategoryDAL());
-        public ActionResult Index()
+        ProductManager pm = new ProductManager(new EFProductDAL());
+        public ActionResult GetCategory(int id)
         {
-            var categoryValues = categoryManager.GetList();
-            return View(categoryValues);
+            var categoryByID = pm.GetList().Where(x => x.CategoryId == id).ToList();
+            return View(categoryByID);
         }
-
-        [HttpGet]
-        public ActionResult AddCategory()
-        {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult AddCategory(Category p)
-        {
-            CategoryValidator categoryValidator = new CategoryValidator();
-            ValidationResult results = categoryValidator.Validate(p);
-            if (results.IsValid)
-            {
-                categoryManager.CategoryAdd(p);
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                foreach (var item in results.Errors)
-                {
-                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
-                }
-            }
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult UpdateCategory(int id)
-        {
-
-            var cat = categoryManager.GetById(id);
-            return View(cat);
-        }
-
-        [HttpPost]
-        public ActionResult UpdateCategory(Category category)
-        {
-            categoryManager.CategoryUpdate(category);
-            return RedirectToAction("Index");
-        }
-
-        public ActionResult DeleteCategory(int id)
-        {
-            var cm = categoryManager.GetById(id);
-            categoryManager.CategoryDel(cm);
-            return View(cm);
-        }
-
-
-
     }
 }

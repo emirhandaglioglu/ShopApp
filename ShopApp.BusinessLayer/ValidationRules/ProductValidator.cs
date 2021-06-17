@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopApp.BusinessLayer.ValidationRules
 {
-    public class ProductValidator : AbstractValidator<Product>
+    public class ProductValidator   :AbstractValidator<Product>
     {
         public ProductValidator()
         {

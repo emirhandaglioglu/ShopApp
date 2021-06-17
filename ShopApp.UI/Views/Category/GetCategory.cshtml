@@ -1,0 +1,61 @@
+﻿@using ShopApp.Entity.Concrete
+@model List<Product>
+@{
+    ViewBag.Title = "GetCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section id="popular-product" class="ecommerce">
+    <div class="container">
+        <!-- Shopping items content -->
+        <div class="shopping-content">
+
+            <!-- Block heading two -->
+            <div class="block-heading-two">
+                <h3><span>@Model.Select(x=>x.Category.CategoryName).FirstOrDefault() Kategorisi</span></h3>
+            </div>
+
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 col-sm-6">
+                        <!-- Shopping items -->
+                        <div class="shopping-item">
+                            <!-- Image -->
+                            <a href="~/Product/Detail/@item.Id"><img class="img-responsive" src="~/Content/etrade/img/product/@item.ProductPicture" alt="" /></a>
+                            <!-- Shopping item name / Heading -->
+                            <h4><a href="single-product.html">@item.ProductName</a><span class="color pull-right">@item.Price</span></h4>
+                            <div class="clearfix"></div>
+                            <!-- Buy now button -->
+                            <div class="visible-xs">
+                                <a class="btn btn-color btn-sm" href="#">Buy Now</a>
+                            </div>
+                            <!-- Shopping item hover block & link -->
+                            <div class="item-hover bg-color hidden-xs">
+                                <a href="#">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+            <!-- Pagination -->
+            <div class="shopping-pagination pull-right">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+            <!-- Pagination end-->
+        </div>
+    </div>
+</section>
+
+

@@ -57,20 +57,32 @@
     <Compile Include="Abstract\IPayment.cs" />
     <Compile Include="Abstract\IProductDAL.cs" />
     <Compile Include="Abstract\IRepository.cs" />
-    <Compile Include="Abstract\IUser.cs" />
-    <Compile Include="Abstract\IUserRol.cs" />
+    <Compile Include="Abstract\IUserRole.cs" />
+    <Compile Include="Abstract\IUserInfo.cs" />
     <Compile Include="Concrate\Repositories\CategoryRepository.cs" />
     <Compile Include="Concrate\Repositories\GenericRepository.cs" />
+    <Compile Include="Concrate\Repositories\OrderDetailRepository.cs" />
+    <Compile Include="Concrate\Repositories\OrderRepository.cs" />
+    <Compile Include="Concrate\Repositories\PaymentRepository.cs" />
     <Compile Include="Concrate\Repositories\ProductRepository.cs" />
+    <Compile Include="Concrate\Repositories\UserInfoRepository.cs" />
+    <Compile Include="Concrate\Repositories\UserRoleRepository.cs" />
     <Compile Include="Concrate\ShopAppContext.cs" />
     <Compile Include="EntityFramework\EFCategoryDAL.cs" />
     <Compile Include="EntityFramework\EFOrderDAL.cs" />
     <Compile Include="EntityFramework\EFOrderDetailsDAL.cs" />
     <Compile Include="EntityFramework\EFPaymentDAL.cs" />
     <Compile Include="EntityFramework\EFProductDAL.cs" />
-    <Compile Include="EntityFramework\EFUserDAL.cs" />
+    <Compile Include="EntityFramework\EFUserInfoDAL.cs" />
     <Compile Include="EntityFramework\EFUserRoleDAL.cs" />
-    <Compile Include="EntityFramework\IUserRole.cs" />
+    <Compile Include="Migrations\202105311251255_chg.cs" />
+    <Compile Include="Migrations\202105311251255_chg.designer.cs">
+      <DependentUpon>202105311251255_chg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106161427317_changes.cs" />
+    <Compile Include="Migrations\202106161427317_changes.designer.cs">
+      <DependentUpon>202106161427317_changes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,7 +96,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105311251255_chg.resx">
+      <DependentUpon>202105311251255_chg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106161427317_changes.resx">
+      <DependentUpon>202106161427317_changes.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

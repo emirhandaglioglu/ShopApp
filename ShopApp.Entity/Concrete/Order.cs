@@ -18,20 +18,17 @@ namespace ShopApp.Entity.Concrete
 
 
         public int UserId { get; set; }
-        public virtual User User { get; set; }
+        public virtual UserInfo UserInfo { get; set; }
 
-        public int PatmentId { get; set; }
-        public virtual Payment Payment { get; set; }
 
-        public ICollection<OrderDetail> OrderDetails{ get; set; }
-
+        public ICollection<OrderDetail> OrderDetails { get; set; }
 
     }
     public enum EnumOrderState
     {
-        waiting = 0,
-        unpaid = 1,
-        completed = 2
+        Beklemede = 0,
+        Hazırlanıyor = 1,
+        Tamamlandı = 2
     }
 
 }

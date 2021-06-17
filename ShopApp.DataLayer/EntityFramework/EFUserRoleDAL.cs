@@ -1,4 +1,5 @@
-﻿using ShopApp.DataLayer.Concrate.Repositories;
+﻿using ShopApp.DataLayer.Abstract;
+using ShopApp.DataLayer.Concrate.Repositories;
 using ShopApp.Entity.Concrete;
 using System;
 using System.Collections.Generic;

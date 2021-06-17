@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ShopApp.BusinessLayer.Concrete;
+using ShopApp.DataLayer.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,18 @@ namespace ShopApp.UI.Controllers
 {
     public class HomeController : Controller
     {
+        ProductManager pm = new ProductManager(new EFProductDAL());
+        CategoryManager cm = new CategoryManager(new EFCategoryDAL());
         public ActionResult Index()
         {
-            return View();
+            var productList = pm.GetList();
+            return View(productList);
+        }
+
+        public PartialViewResult CategoryPartial()
+        {
+            var categoryList = cm.GetList();
+            return PartialView(categoryList);
         }
 
         public ActionResult About()
@@ -26,5 +37,9 @@ namespace ShopApp.UI.Controllers
 
             return View();
         }
+
+
+        
+
     }
 }
